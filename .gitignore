@@ -1,0 +1,14 @@
+# ReMint Git Ignore Rules
+backend/uploads/
+backend/remint.db
+**/__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.env
+.DS_Store
+Thumbs.db
+.vercel/
+.vercel-stale*/
+_reference/
+.claude/

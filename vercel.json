@@ -1,0 +1,16 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "functions": {
+    "api/**/*.py": {
+      "maxDuration": 60,
+      "excludeFiles": "{_reference/**,.claude/**,.vercel*/**,frontend/**,backend/tests/**,backend/uploads/**,backend/.env,backend/remint.db,**/__pycache__/**,**/*.pyc,verify_e2e_v3.py}"
+    }
+  },
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "/api/index.py" },
+    { "source": "/css/:path*", "destination": "/frontend/css/:path*" },
+    { "source": "/js/:path*", "destination": "/frontend/js/:path*" },
+    { "source": "/", "destination": "/frontend/index.html" }
+  ]
+}

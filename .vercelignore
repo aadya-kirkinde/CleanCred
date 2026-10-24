@@ -1,0 +1,9 @@
+backend/.env
+backend/remint.db
+backend/uploads/
+backend/__pycache__/
+**/__pycache__/
+_reference/
+.claude/
+*.pyc
+.vercel-stale*/
